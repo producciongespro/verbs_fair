@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+
+
+    <script src="js/jquery.js" ></script>
+    <script src="js/jquery-ui.min.js" ></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+    <!-- <script src="js/main.js" ></script> -->
+    <script src="js/modificar_caracteres.js" ></script>
+    <script src="js/main2.js" ></script>
+    <title>Verb´s Fairs</title>
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129164311-15"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-129164311-15');
+  </script>
+  <body>
+    <div id="contenedor_principal">
+        <img id="contenedor_fondos" src="img/fondo_splash.jpg" alt="start Background">
+
+        <div class="sup_inf" id="encabezado">
+          <div id="reloj"></div>
+            <!-- <div class="accesos">
+              <div class="acceso" ><img id="btnAyuda"></div>
+              <div class="acceso" ><img id="btnMenu"></div>
+              <div class="acceso" ><img id="btnAcerca"></div>
+            </div> -->
+
+
+            <div class="accesos">
+              <img class="acceso" id="btnAyuda">
+              <img class="acceso" id="btnMenu">
+              <img class="acceso" id="btnAcerca">
+            </div>
+
+        </div>
+
+        <div class="laterales" id="izquierdo">
+            <div class="contenedor" id="contendorIzquierdo"></div>
+        </div>
+
+      <div id="principal">
+        <div id="nivel"></div>
+        <div id="puntaje"></div>
+        <div class="flechas" id="flecha_izquierda">
+          <img src="img/img_flecha_izq.png" alt="flecha izquierda">
+        </div>
+        <div class="flechas" id="flecha_derecha">
+          <img src="img/img_flecha_der.png" alt="flecha derecha">
+        </div>
+      </div>
+
+      <div class="laterales" id="derecho">
+        <div class="contenedor" id="contendorDerecho"></div>
+      </div>
+
+      <div class="sup_inf" id= "pie"></div>
+
+      <div id="contenedor_boton_next">
+        <img src="img/img_btn_next_level.png" alt="Next level">
+      </div>
+
+      <div class="contenedor_icono_sonido" id="switch_audio">
+        <img id="img_interruptor_Audio" src="" alt="">
+      </div>
+
+    </div>
+
+    <div class="grupo_audios"></div>
+    <div class="grupo_audios2">
+      <audio id="aud_try" src="assets/try_again.mp3" preload="auto"></audio>
+      <audio id="aud_good" src="assets/good_job.mp3" preload="auto"></audio>
+      <audio id="aud_exc" preload="auto">
+            <source src="assets/excellent.wav" type="audio/wav">
+            <source src="assets/excellent.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="aud_fondo1" src="assets/spring_in_my_step.mp3" preload="auto" loop></audio>
+      <audio id="aud_fondo2" src="assets/let_your_body.mp3" preload="auto" loop></audio>
+    </div>
+
+
+
+
+
+    <!-- INCIO DE LAS PANTALLAS MODALES DE HELP Y ABOUT -->
+    <div class="dialogo modal fade" id="divModales" role="dialog">
+
+      <div class="dialogo modal-dialog">
+        <!-- Modal content-->
+        <div class="dialogo modal-content">
+          <div class="dialogo modal-body">
+            <img class="dialogo img_dialogo" src=""  alt="" id="imagen_modal">
+            <span id="resultado_puntos"></span>
+            <div class="divs_cerrar">
+                 <img class="botones_cerrar" id="imgCerrar2" src="img/btn_cerrar.png" alt="Close">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FIN DE LAS PANTALLAS MODALES -->
+
+
+    <!-- INCIO DEL TRY AGAIN -->
+    <div class="dialogo modal fade" id="divTryAgain" role="dialog">
+
+      <div class="dialogo modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="dialogo modal-content">
+          <div class="dialogo modal-body">
+            <img class="dialogo img_dialogo" src="img/img_try_again.jpg"  alt="Try again">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FIN DEL TRY AGAIN -->
+
+
+  <!-- INCIO DEL MENU -->
+  <div class="dialogo modal fade" id="divMenu" role="dialog">
+
+    <div class="dialogo modal-dialog">
+      <!-- Modal content-->
+      <div class="dialogo modal-content">
+        <div class="dialogo modal-body">
+          <img class="dialogo img_dialogo" src="img/fondo_menu.jpg" id="fondo_menu" alt="fondo Menu">
+              <div class="divs_cerrar">
+			             <img class="botones_cerrar" id="imgCerrar1" src="img/btn_cerrar.png" alt="Close">
+		            </div>
+            <div class="options" id="opt1">
+              <img class="dialogo" src="img/opt1_gris.png" id="img_opt1" alt="spanish and present">
+            </div>
+            <div class="options" id="opt2">
+              <img src="img/opt2_gris.png" id="img_opt2" alt="Past and present">
+            </div>
+            <div class="options" id="opt3">
+              <img src="img/opt3_gris.png" id="img_opt3" alt="Participle and present">
+            </div>
+
+
+            <div class="cont_modos">
+              <div class="modos" id="modoTraining">
+                <img id="imgTraining" src="img/training_inactivo.png" alt="training">
+              </div>
+              <div class="modos" id="modoCompetition">
+                <img id="imgComp" src="img/comp_inactivo.png" alt="training">
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FIN DEL MENU -->
+
+<div class="grupo-imagenes">
+  <img id="imgCompetActivo" src="img/comp_activo.png">
+  <img id="imgCompetInactivo" src="img/comp_inactivo.png">
+  <img id="imgTrainingInactivo" src="img/training_inactivo.png">
+  <img id="imgTrainingActivo" src="img/training_activo.png">
+
+  <img id="imgAcercaDe" src="img/fondo_acerca_txt.jpg">
+  <img id="imgAyuda" src="img/fondo_ayuda_txt.png">
+
+</div>
+
+  </body>
+</html>

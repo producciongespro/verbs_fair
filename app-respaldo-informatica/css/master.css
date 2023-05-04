@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, #menu {
+  background-color: #000;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 0%
+}
+h1, .subtitulo {
+  text-align: center; font-weight: bold; color: #DAF7A6;}
+div, #fondo_juego, img {position: absolute;}
+
+#resultado_puntos {
+  font-size: 421%;
+  z-index: 9999;
+  color: white;
+  position: absolute;
+  left: 29%;
+  margin-top: 27%;
+  font-weight: bold;
+}
+
+
+.dialogo {
+  position: relative;
+}
+
+.grupo-imagenes {
+  display: none;
+}
+
+.botones_cerrar {
+  border-radius: 15%;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+#area_arrastrable {
+  top: 24%;
+  left: 1%;
+  height: 56%;
+  width: 97%;
+  /*background-color: red;*/
+  visibility: hidden;
+}
+
+
+
+.img_dialogo {
+  border-radius: 15px;
+}
+
+.modal-content {
+  position: relative;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-dialog {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+.cont_modos {
+  top: 81%;
+  left: 33%;
+  height: 18%;
+  width: 35%;
+  /*background-color: green;*/
+
+}
+
+.modos {
+  /*background-color: blue;*/
+  height: 67%;
+  width: 50%;
+  top: 10%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+#modoTraining {
+  left: 0
+}
+
+#modoCompetition {
+  left: 50%;
+}
+
+#contenedor_principal, #contenedor_fondos, img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#contenedor_boton_next {
+  top: 37%;
+  left: 40%;
+  height: 24%;
+  width: 21%;
+  display: none;
+  cursor: pointer;
+}
+
+.flechas {
+  height: 39%;
+  width: 46%;
+  display: none;
+}
+
+#flecha_izquierda {
+  top: 10%;
+  left: 60%;
+}
+
+#flecha_derecha {
+  top: 40%;
+  left: -4%;
+
+}
+
+.contenedor_icono_sonido {
+  top: 2.8%;
+  left: 72.5%;
+  height: 3.5%;
+  width: 8%;
+  cursor: pointer;
+}
+
+.laterales {
+  padding-left: 2%;
+  box-sizing: border-box;
+  height: 57%;
+  width: 35%;
+  top: 20%;
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+  margin-left: 3%
+  }
+
+.contenedor {
+height: 92.5%;
+width: 100%;
+top: 9.9%;
+left: 0.2%;
+
+  /*background-color: #fff;*/
+}
+.sup_inf {
+  width: 96%;
+  left: 2.5%;
+  /*background-color: rgba(255,0,255,0.6);*/
+}
+
+#principal {
+  height: 50%;
+  width: 24%;
+  left: 38%;
+  top: 27%;
+  /*background-color: rgba(0,255,0,0.5);*/
+}
+
+#izquierdo {left:0%;}
+#derecho {left: 60.5%;}
+#encabezado {top: 0%; height: 20%;}
+#pie {
+  top: 81%;
+  height: 16%;
+  text-align: center;
+  box-sizing: border-box;
+  }
+
+  /******************Monitores grandes***************************/
+  .cartas {
+    background-color: #1B63E9;
+    background-image: url("../img/fondo_tarjetas.png");
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 16px;
+    position: static;
+    display: inline-block;
+    border: solid 1px #fff;
+    height: 26%;
+    width: 26%;
+    margin-left: 1.8%;
+    margin-top: 3.0%;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 160%;
+    font-weight: bold;
+    color: #000;
+
+    }
+
+  /******************Monitores medianos***************************/
+  @media (max-width: 1450px) {
+    .cartas {
+      background-image: url("../img/fondo_tarjetas.png");
+      margin-top: 2.4%;
+      padding-top: 5.6%;
+      font-size: 130%;
+    }
+    }
+  /*********************Celulares**************************/
+    @media (max-width: 650px) {
+      .cartas {
+        background-image: url("../img/fondo_tarjetas.png");
+        margin-top: 3%;
+        padding-top: %;
+        font-size: 90%;
+      }
+      }
+
+#puntaje {
+        left: 80%;
+        top: 84%;
+        color: orange;
+        font-size: 190%;
+        font-weight: bold;
+      }
+      /*********************Monitor Portàtil**************************/
+      @media screen and (max-width: 1450px){
+      #puntaje {
+        top: 83%;
+        font-size: 130%;
+      }
+      }
+      /*********************Celulares**************************/
+      @media screen and (max-width: 650px){
+        #puntaje {
+          top: 82%;
+          font-size: 90%;
+      }
+      }
+
+      /*********************Monito Grande**************************/
+#nivel {
+      left: 30%;
+      top: 84%;
+      color: orange;
+      font-size: 190%;
+      font-weight: bold;
+      }
+      /*********************Monito Portàtil**************************/
+      @media screen and (max-width: 1450px){
+        #nivel {
+        top: 83%;
+        font-size: 130%;
+      }
+      }
+        /*********************Celulares**************************/
+      @media screen and (max-width: 650px){
+      #nivel {
+        top: 82%;
+        font-size: 90%;
+      }
+      }
+/*********************Monito Grande**************************/
+.espacioCartasAcomodadas {
+        height: 40%;
+        width: 10.1%;
+        /*background-color: blue;*/
+        position: relative;
+        display: inline-block;
+        margin-right: 0.9%;
+        margin-top: 0.3%;
+        text-align: center;
+        font-size: 190%;
+      }
+
+      /*********************Portátiles**************************/
+      @media screen and (max-width: 1450px){
+        .espacioCartasAcomodadas {
+          margin-top: 0.2%;
+          font-size: 130%;
+        }
+        }
+
+        /*********************Celulares**************************/
+      @media screen and (max-width: 650px){
+        .espacioCartasAcomodadas {
+          margin-top: 0.1%;
+          font-size: 90%;
+        }
+        }
+
+/*********************Monito Grande**************************/
+        #reloj {
+          top: 10%;
+          left: 46%;
+          height: 30%;
+          width: 6%;
+          color: #fff;
+          text-align: center;
+          padding-bottom: 4px;
+          visibility: hidden;
+          border: solid #fff;
+          border-radius: 10%;
+          font-size: 190%;
+        }
+
+/*********************Portátiles**************************/
+    @media screen and (max-width: 1450px){
+      #reloj {
+        top: 10%;
+        height: 45%;
+        font-size: 120%;
+      }
+      }
+
+/*********************Celulares**************************/
+    @media screen and (max-width: 650px){
+      #reloj {
+        top: 10%;
+        height: 45%;
+        font-size: 120%;
+      }
+      }
+
+.contenedores {
+  position: static;
+  display: inline-block;
+  width: 4.8%;
+  height: 100%;
+  /*background-color: yellow;*/
+
+}
+.cartasAcomodadas {
+    /*background-color: #FF5733;*/
+    position:static;
+    display: inline-block;
+    color: #fff;
+    margin-left: 2px;
+    width: 5.3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+  top: 0.1%;
+  left: 0.1%;
+  background-color: #FF9F8B;
+  border-radius: 12px;
+  position: absolute;
+  padding: 0%;
+}
+
+.options {
+ height: 30%;
+ width: 20%;
+ top: 40%;
+ cursor: pointer;
+}
+
+#opt1 {
+  left: 15%;
+}
+#opt2 {
+  left: 40%;
+}
+#opt3 {
+  left: 65%;
+}
+
+.divs_cerrar {
+  left: 93%;
+  top: 2%;
+	height: 8%;
+	width: 6%;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+
+.accesos {
+  height: 60%;
+  width: 35%;
+  top: 68%;
+  left: 47%;
+  border-style: none;
+  visibility: hidden;
+  /*background-color: rgba(0,255,0,0.6);*/
+}
+
+.acceso {
+  border-style: none;
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  float: left;
+  height: 69%;
+  width: 32%;
+}

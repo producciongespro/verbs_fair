@@ -48,7 +48,17 @@ div, #fondo_juego, img {position: absolute;}
   visibility: hidden;
 }
 
+#modoCalificame {
+  left: 0%;
+}
 
+#modoTraining {
+  left: 33%;
+}
+
+#modoCompetition {
+  left: 66%;
+}
 
 .img_dialogo {
   border-radius: 15px;
@@ -78,20 +88,20 @@ div, #fondo_juego, img {position: absolute;}
 
 .modos {
   /*background-color: blue;*/
-  height: 67%;
-  width: 50%;
+  height: 54%;
+  width: 32%;
   top: 10%;
   cursor: pointer;
   margin-bottom: 2%;
 }
 
-#modoTraining {
+/* #modoTraining {
   left: 0
 }
 
 #modoCompetition {
   left: 50%;
-}
+} */
 
 #contenedor_principal, #contenedor_fondos, img {
   height: 100%;
